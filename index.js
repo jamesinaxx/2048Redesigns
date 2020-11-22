@@ -11,14 +11,6 @@ const clientId = '778575775104106496';
 
   app.on('ready', () => {
 
-    rpc.on('ready', () => {
-      setActivity(rpc);
-
-      setInterval(() => {
-        setActivity(rpc);
-      }, 15e3);
-    });
-
     const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './cupcakes/source/favicon.png' })
 
     win.loadURL(url.format({
@@ -38,6 +30,14 @@ const clientId = '778575775104106496';
     app.quit();
   });
 
+  rpc.on('ready', () => {
+    setActivity(rpc);
+
+    setInterval(() => {
+      setActivity(rpc);
+    }, 15e3);
+  });
+  
   function setActivity(rpc) {
     if (!rpc) {
       return;

@@ -1,6 +1,6 @@
 {
-    "name": "2048 Cupcake Edition",
-    "version": "0.1.2",
+    "name": "2048 Reworks",
+    "version": "0.1.0",
     "description": "– The Cupcakes version of 2048 game –",
     "permissions": [
         "declarativeContent"

@@ -1,6 +1,6 @@
 {
-  "name": "2048-cupcakes",
-  "version": "0.1.2",
+  "name": "2048-reworks",
+  "version": "0.1.0",
   "description": "A fork of the Cupcakes version of the 2048 game in app form",
   "main": "index.js",
   "scripts": {

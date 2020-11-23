@@ -1,8 +1,12 @@
-var currentGame = 'Main Screen';
+var currentGame = "none";
 
-document.getElementById("cupcake").addEventListener('click', () => {
-    currentGame = "cupcake";
-});
+// eslint-disable-next-line semi
+document.getElementById("cupcakes").onclick = function() { cupcakes() };
+
+function cupcakes() {
+    currentGame = "cupcakes";
+    document.getElementById("cupcakes").innerHTML = currentGame;
+};
 
 document.getElementById("starwars").addEventListener('click', () => {
     currentGame = "starwars";

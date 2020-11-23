@@ -11,9 +11,7 @@ const clientId = '778575775104106496';
 
   app.on('ready', () => {
 
-    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './cupcakes/source/favicon.png' });
-
-    currentGame = "none";
+    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './assets/favicon.ico' });
 
     win.loadURL(url.format({
       pathname: path.join(__dirname, 'index.html'),
@@ -24,6 +22,14 @@ const clientId = '778575775104106496';
     win.on('ready-to-show', () => {
       win.show();
       win.maximize();
+
+      rpc.on('ready', () => {
+        setActivity(rpc);
+
+        setInterval(() => {
+          setActivity(rpc);
+        }, 5000);
+      });
     });
     rpc.login({ clientId }).catch(console.error);
   });
@@ -31,16 +37,10 @@ const clientId = '778575775104106496';
   app.on('window-all-closed', () => {
     app.quit();
   });
-
-  rpc.on('ready', () => {
-    setActivity(rpc);
-
-    setInterval(() => {
-      setActivity(rpc);
-    }, 15e3);
-  });
   
   function setActivity(rpc) {
+    console.info(currentGame);
+
     if (!rpc) {
       return;
     };

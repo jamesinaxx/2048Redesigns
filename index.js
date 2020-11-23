@@ -11,7 +11,9 @@ const clientId = '778575775104106496';
 
   app.on('ready', () => {
 
-    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './cupcakes/source/favicon.png' })
+    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './cupcakes/source/favicon.png' });
+
+    currentGame = "none";
 
     win.loadURL(url.format({
       pathname: path.join(__dirname, 'index.html'),
@@ -47,8 +49,8 @@ const clientId = '778575775104106496';
       details: `The Rainbow cupcake is desired by all`,
       state: 'Joining cupcakes!',
       startTimestamp: startTimestamp,
-      largeImageKey: "mainicon",
-      largeImageText: '2048 Cupcake Edition',
+      largeImageKey: currentGame,
+      largeImageText: currentGame,
       smallImageKey: "jamesafk",
       smallImageText: 'Shamless plug of me :)',
       instance: false,

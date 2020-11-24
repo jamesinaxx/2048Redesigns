@@ -513,6 +513,19 @@ hr {
   line-height: 42px;
   margin-bottom: 0; }
 
+.back_button {
+  display: inline-block;
+  background: #576c47;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #1a2513;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: left; }
+
 .restart-button {
   display: inline-block;
   background: #576c47;
@@ -525,6 +538,19 @@ hr {
   display: block;
   text-align: center;
   float: right; }
+
+.back_button {
+  display: inline-block;
+  background: #576c47;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #1a2513;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: left; }
 
 .game-explanation {
   margin-top: 50px; }

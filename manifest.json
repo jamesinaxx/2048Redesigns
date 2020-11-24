@@ -2,6 +2,7 @@
     "name": "2048 Reworks",
     "version": "0.1.0",
     "description": "– Some Remakes of the 2048 game –",
+    "author": ["JamesAfk", "Alex Petrosh", "Simon Owen"],
     "permissions": [
         "declarativeContent"
     ],

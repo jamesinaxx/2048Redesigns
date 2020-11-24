@@ -507,6 +507,21 @@ hr {
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
+.cupcakes_text, .starwars_text, .army_text, .pantone_text, .tiffany_text {
+  margin-left: 3px;
+  margin-right: 3px;
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: left; }
+
 .above-game:after {
   content: "";
   display: block;

@@ -1,4 +1,4 @@
-Redesigns of [2048](https://jamesafk.github.io/2048cupcakes/) game
+Redesigns of [2048](jamesafk.github.io/2048reworks/) game
 ========================================================================
 
 ### Massive credit to [*Simon Owen*](https://github.com/s10wen) and [*Alex Petrosh*](https://github.com/petrosh) at [*0x0800*](https://github.com/0x0800) for making most of these!

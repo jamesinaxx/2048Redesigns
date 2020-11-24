@@ -7,8 +7,6 @@ const DiscordRPC = require('discord-rpc');
 const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 const startTimestamp = new Date();
 
-const dir = __dirname;
-
 const clientId = '778575775104106496';
 
   app.on('ready', () => {

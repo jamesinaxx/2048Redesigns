@@ -529,17 +529,8 @@ hr {
   margin-top: 5px; }
 
 .back_button {
-  display: inline-block;
   background: #f888a9;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #3c1b1a;
-  height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;
-  float: left; }
+  color: #3c1b1a; }
 
 .restart-button {
   display: inline-block;

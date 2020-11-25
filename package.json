@@ -1,6 +1,6 @@
 {
   "name": "2048-reworks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A fork of the Cupcakes version of the 2048 game in app form",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/jamesafk/2048cupcakes.git"
   },
-  "author": "JamesAfk, 0x800",
+  "author": "JamesAfk, 0x0800",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jamesafk/2048cupcakes/issues"

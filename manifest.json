@@ -1,6 +1,6 @@
 {
     "name": "2048 Reworks",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "– Some Remakes of the 2048 game –",
     "author": ["JamesAfk", "Alex Petrosh", "Simon Owen"],
     "permissions": [
@@ -15,18 +15,18 @@
     "page_action": {
         "default_popup": "index.html",
         "default_icon": {
-            "16": "icons/16.png",
-            "32": "icons/32.png",
-            "48": "icons/48.png",
-            "128": "icons/128.png"
+            "16": "assets/icons/chrome/16.png",
+            "32": "assets/icons/chrome/32.png",
+            "48": "assets/icons/chrome/48.png",
+            "128": "assets/icons/chrome/128.png"
         },
         "default_title": "2048 Cupcake Edition"
     },
     "icons": {
-        "16": "icons/16.png",
-        "32": "icons/32.png",
-        "48": "icons/48.png",
-        "128": "icons/128.png"
+        "16": "assets/icons/chrome/16.png",
+        "32": "assets/icons/chrome/32.png",
+        "48": "assets/icons/chrome/48.png",
+        "128": "assets/icons/chrome/128.png"
     },
     "manifest_version": 2
 }

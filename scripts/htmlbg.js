@@ -1,11 +1,42 @@
+const DiscordRPC = require('discord-rpc');
+
+const rpc = new DiscordRPC.Client({ transport: 'ipc' });
+const startTimestamp = new Date();
+
 var currentGame = "none";
 
-// eslint-disable-next-line semi
-document.getElementById("cupcakes").onclick = function() { cupcakes() };
+rpc.on('ready', () => {
+    setActivity(rpc);
 
-function cupcakes() {
+    setInterval(() => {
+        setActivity(rpc);
+    }, 5000);
+});
+
+rpc.login({ clientId }).catch(console.error);
+
+  
+function setActivity(rpc) {
+    console.info(currentGame);
+
+    if (!rpc) {
+      return;
+    };
+
+    rpc.setActivity({
+      details: `The Rainbow cupcake is desired by all`,
+      state: 'Joining cupcakes!',
+      startTimestamp: startTimestamp,
+      largeImageKey: currentGame,
+      largeImageText: currentGame,
+      smallImageKey: "jamesafk",
+      smallImageText: 'Shamless plug of me :)',
+      instance: false,
+    });
+  };
+
+document.getElementById("cupcakes").onclick = function cupcakes() {
     currentGame = "cupcakes";
-    document.getElementById("cupcakes").innerHTML = currentGame;
 };
 
 document.getElementById("starwars").addEventListener('click', () => {

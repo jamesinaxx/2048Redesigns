@@ -2,7 +2,7 @@
   "name": "2048-reworks",
   "version": "0.2.0",
   "description": "A fork of the Cupcakes version of the 2048 game in app form",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
@@ -19,8 +19,9 @@
   },
   "homepage": "https://jamesafk.github.io/2048cupcakes",
   "devDependencies": {
+    "electron": "^11.0.1",
     "electron-packager": "^15.1.0",
-    "electron": "^11.0.1"
+    "typescript": "^4.1.2"
   },
   "dependencies": {
     "discord-rpc": "^3.1.4"

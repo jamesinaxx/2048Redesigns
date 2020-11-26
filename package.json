@@ -1,0 +1,28 @@
+{
+  "name": "2048-redesigns",
+  "version": "0.2.0",
+  "description": "A bunch of redeigns of the 2048 game",
+  "main": "source/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron source/index.ts",
+    "build": "electron-packager source/index.ts 2048redesigns --platform=win32 --arch=x64 --out=./out/ --icon=./source/assets/icons/favicon.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesafk/2048Redesigns.git"
+  },
+  "author": "JamesAfk, 0x0800",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jamesafk/2048Redesigns/issues"
+  },
+  "homepage": "https://jamesafk.github.io/2048Redesigns",
+  "devDependencies": {
+    "electron": "^11.0.1",
+    "electron-packager": "^15.1.0",
+    "eslint": "^7.14.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {}
+}

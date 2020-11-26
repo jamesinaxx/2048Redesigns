@@ -2,7 +2,7 @@
   "name": "2048-reworks",
   "version": "0.2.0",
   "description": "A fork of the Cupcakes version of the 2048 game in app form",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",

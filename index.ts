@@ -2,7 +2,9 @@ const {app, BrowserWindow} = require('electron');
   const path = require('path');
   const url = require('url');
 
-const clientId = '778575775104106496';
+require('dotenv').config();
+
+const clientId = process.env.TOKEN;
 
 app.on('ready', () => {
 

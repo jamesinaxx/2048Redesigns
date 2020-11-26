@@ -13,7 +13,7 @@
     "url": "git+https://github.com/jamesafk/2048cupcakes.git"
   },
   "author": "JamesAfk, 0x0800",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/jamesafk/2048cupcakes/issues"
   },

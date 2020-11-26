@@ -7,7 +7,7 @@ app.on('ready', () => {
   const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './assets/icons/favicon.ico' });
 
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: '../index.html',
     protocol: 'file:',
     slashes: true
   }));

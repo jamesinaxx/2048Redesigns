@@ -1,7 +1,7 @@
 {
-  "name": "2048-reworks",
+  "name": "2048-redesigns",
   "version": "0.2.0",
-  "description": "A fork of the Cupcakes version of the 2048 game in app form",
+  "description": "A bunch of redeigns of the 2048 game",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesafk/2048cupcakes.git"
+    "url": "git+https://github.com/jamesafk/2048Redesigns.git"
   },
   "author": "JamesAfk, 0x0800",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jamesafk/2048cupcakes/issues"
+    "url": "https://github.com/jamesafk/2048Redesigns/issues"
   },
-  "homepage": "https://jamesafk.github.io/2048cupcakes",
+  "homepage": "https://jamesafk.github.io/2048Redesigns",
   "devDependencies": {
     "electron": "^11.0.1",
     "electron-packager": "^15.1.0",

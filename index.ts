@@ -6,7 +6,7 @@ const clientId = '778575775104106496';
 
   app.on('ready', () => {
 
-    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './assets/favicon.ico' });
+    const win = new BrowserWindow({ width: 800, height: 800, show: false, autoHideMenuBar: true, icon: './assets/icons/favicon.ico' });
 
     win.loadURL(url.format({
       pathname: path.join(__dirname, 'index.html'),

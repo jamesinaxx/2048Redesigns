@@ -1,12 +1,12 @@
 {
   "name": "2048-redesigns",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A bunch of redeigns of the 2048 game",
   "main": "source/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron source/index.ts",
-    "build": "electron-packager source/index.ts 2048redesigns --platform=win32 --arch=x64 --out=./out/ --icon=./source/assets/icons/favicon.ico"
+    "build": "electron-packager source/index.ts 2048redesigns --platform=win32 --arch=all --out=./out/ --icon=./source/assets/icons/favicon.ico"
   },
   "repository": {
     "type": "git",

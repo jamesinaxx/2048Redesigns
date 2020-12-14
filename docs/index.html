@@ -2,34 +2,140 @@
 <html>
 
 <head>
-    <title>2048 Redesigns</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="A bunch of redesigns of the 2048 game!">
-    <meta name="author" content="jamesinaxx">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="gaming, coding, developer, bisexual, LGBTQIA+, streamer, youtuber, youtube, jamesinaxx, jamesina, twitch">
-    <style>
-        body {
-            background-color: #FFF;
-            border: 0;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .mainpageframe {
-            height: 100%;
-            width: 100%;
-            border: none;
-            position: absolute;
-        }
-    </style>
+  <title>2048 Redesigns</title>
+  <meta name=”description” content=”Description”>
+  <meta name=”keywords” content=”Keyword1, Keyword2″>
 </head>
 
-<body s>
-    <iframe class="mainpageframe" scrolling="auto" frameborder="none" src="../index.html"></iframe>
+<link rel="stylesheet" href="../source/assets/styling/main.css" type="text/css">
+
+<img src="../source/assets/icons/icon.svg" alt="2048 Redesigns icon" class="mainicon">
+
+<h1 class="welcome_title" id="welcome_title">Welcome to the 2048 Redesigns!</h1>
+<br>
+
+<p class="instructions_text">Click on one of the buttons to play a 2048 redesign or play the original below!</p>
+
+<nav>
+  <ul>
+    <a class="army_text" href="../source/2048/army/index.html">Army</a>
+    <a class="cupcakes_text" href="../source/2048/cupcakes/index.html">Cupcakes</a>
+    <a class="pantone_text" href="../source/2048/pantone/index.html">Pantone</a>
+    <a class="starwars_text" href="../source/2048/starwars/index.html">Star Wars</a>
+    <a class="tiffany_text" href="../source/2048/tiffany/index.html">Tiffany</a>
+  </ul>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="../source/2048/og/style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="../source/assets/icons/chrome/16.png">
+  <link rel="apple-touch-icon" href="../meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="../meta/apple-touch-startup-image-640x1096.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="../meta/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport"
+    content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two
+      tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+      <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone
+      via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and
+      should be used with caution.
+    </p>
+    <hr>
+    <p>
+      Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a
+        href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and
+      conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+  </div>
+
+  <script src="../source/2048/og/js/bind_polyfill.js"></script>
+  <script src="../source/2048/og/js/classlist_polyfill.js"></script>
+  <script src="../source/2048/og/js/animframe_polyfill.js"></script>
+  <script src="../source/2048/og/js/keyboard_input_manager.js"></script>
+  <script src="../source/2048/og/js/html_actuator.js"></script>
+  <script src="../source/2048/og/js/grid.js"></script>
+  <script src="../source/2048/og/js/tile.js"></script>
+  <script src="../source/2048/og/js/local_storage_manager.js"></script>
+  <script src="../source/2048/og/js/game_manager.js"></script>
+  <script src="../source/2048/og/js/application.js"></script>
 </body>
 
 </html>

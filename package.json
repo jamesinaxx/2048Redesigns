@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron source/index.js",
-    "build": "electron-packager source/index.js 2048redesigns --platform=win32 --arch=all --out=./out/ --icon=./source/assets/icons/favicon.ico"
+    "build": "electron-packager source/index.js 2048redesigns --platform=all --arch=x64 --out=./out/ --icon=./source/assets/icons/favicon.ico"
   },
   "repository": {
     "type": "git",
